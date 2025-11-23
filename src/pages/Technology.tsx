@@ -6,7 +6,7 @@ export default function Technology() {
   const technologies = [
     {
       title: 'Artificial Intelligence',
-      icon: <Brain className="w-12 h-12 text-green-600" />,
+      icon: <Brain className="w-12 h-12 text-orchid-600" />,
       image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg',
       description: 'Our AI systems use advanced machine learning and neural networks to optimize energy consumption, predict environmental patterns, and automate sustainable operations.',
       capabilities: [
@@ -18,7 +18,7 @@ export default function Technology() {
     },
     {
       title: 'IoT & Smart Sensors',
-      icon: <Cpu className="w-12 h-12 text-green-600" />,
+      icon: <Cpu className="w-12 h-12 text-orchid-600" />,
       image: 'https://images.pexels.com/photos/2582928/pexels-photo-2582928.jpeg',
       description: 'Connected devices and intelligent sensors form the backbone of our monitoring systems, providing real-time data on energy usage, air quality, and environmental conditions.',
       capabilities: [
@@ -30,7 +30,7 @@ export default function Technology() {
     },
     {
       title: 'Bioengineering',
-      icon: <FlaskConical className="w-12 h-12 text-green-600" />,
+      icon: <FlaskConical className="w-12 h-12 text-orchid-600" />,
       image: 'https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg',
       description: 'Nature-inspired solutions using bioengineered organisms and biomimetic designs to create sustainable, self-maintaining systems that work in harmony with ecosystems.',
       capabilities: [
@@ -42,7 +42,7 @@ export default function Technology() {
     },
     {
       title: 'Data Analytics',
-      icon: <Database className="w-12 h-12 text-green-600" />,
+      icon: <Database className="w-12 h-12 text-orchid-600" />,
       image: 'https://images.pexels.com/photos/7567443/pexels-photo-7567443.jpeg',
       description: 'Advanced data processing and visualization tools that transform raw environmental data into actionable insights for better decision-making and optimization.',
       capabilities: [
@@ -56,7 +56,7 @@ export default function Technology() {
 
   return (
     <div>
-      <section className="py-20 bg-gradient-to-br from-green-50 to-teal-50">
+      <section className="py-20 bg-gradient-to-br from-orchid-500/5 to-orchid-600/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">Our Technology</h1>
@@ -101,7 +101,7 @@ export default function Technology() {
                 <AnimatedSection animation={index % 2 === 0 ? 'slide-left' : 'slide-right'}>
                   <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                     <div className="flex items-center space-x-4 mb-6">
-                      <div className="p-3 bg-green-50 rounded-lg">
+                      <div className="p-3 bg-orchid-500/10 rounded-lg">
                         {tech.icon}
                       </div>
                       <h2 className="text-3xl font-bold text-gray-900">{tech.title}</h2>
@@ -116,7 +116,7 @@ export default function Technology() {
                       <ul className="space-y-2">
                         {tech.capabilities.map((capability, capIndex) => (
                           <li key={capIndex} className="flex items-start space-x-2">
-                            <span className="text-green-600 mt-1">→</span>
+                            <span className="text-orchid-700 mt-1">→</span>
                             <span className="text-gray-700">{capability}</span>
                           </li>
                         ))}
@@ -144,7 +144,7 @@ export default function Technology() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <AnimatedSection animation="fade-up">
               <Card className="p-8 h-full">
-                <div className="text-4xl font-bold text-green-600 mb-3">01</div>
+                <div className="text-4xl font-bold text-orchid-700 mb-3">01</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Integrated Systems</h3>
                 <p className="text-gray-600">
                   Our technologies work together seamlessly, creating synergies that amplify
@@ -155,7 +155,7 @@ export default function Technology() {
 
             <AnimatedSection animation="fade-up">
               <Card className="p-8 h-full">
-                <div className="text-4xl font-bold text-green-600 mb-3">02</div>
+                <div className="text-4xl font-bold text-orchid-700 mb-3">02</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Proven Results</h3>
                 <p className="text-gray-600">
                   Every solution is tested and validated in real-world conditions, with
@@ -166,7 +166,7 @@ export default function Technology() {
 
             <AnimatedSection animation="fade-up">
               <Card className="p-8 h-full">
-                <div className="text-4xl font-bold text-green-600 mb-3">03</div>
+                <div className="text-4xl font-bold text-orchid-700 mb-3">03</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Future-Ready</h3>
                 <p className="text-gray-600">
                   Built on scalable, modular architectures that adapt to emerging technologies

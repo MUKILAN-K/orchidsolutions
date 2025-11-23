@@ -86,7 +86,7 @@ export default function Blog() {
 
   return (
     <div>
-      <section className="py-20 bg-gradient-to-br from-green-50 to-teal-50">
+      <section className="py-20 bg-gradient-to-br from-orchid-500/5 to-orchid-600/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">Blog & Insights</h1>
@@ -185,7 +185,7 @@ export default function Blog() {
         </div>
       </section>
 
-      <section className="py-20 bg-green-600 text-white">
+      <section className="py-20 bg-orchid-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h2 className="text-4xl font-bold mb-6">Stay Updated</h2>
@@ -200,7 +200,7 @@ export default function Blog() {
                   placeholder="Enter your email"
                   className="flex-1 px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
                 />
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-orchid-700">
                   Subscribe
                 </Button>
               </div>

@@ -43,7 +43,7 @@ export default function Gallery() {
       location: 'Seattle, WA',
       image: 'https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg',
       category: 'Smart Infrastructure',
-    },
+    }
   ];
 
   const events = [
@@ -64,7 +64,7 @@ export default function Gallery() {
       date: 'June 10, 2024',
       image: 'https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg',
       description: 'Live demonstrations of SolarNet AI technology',
-    },
+    }
   ];
 
   const certifications = [
@@ -76,7 +76,7 @@ export default function Gallery() {
 
   return (
     <div>
-      <section className="py-20 bg-gradient-to-br from-green-50 to-teal-50">
+      <section className="py-20 bg-gradient-to-br from-orchid-500/5 to-orchid-600/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">Gallery</h1>
@@ -101,26 +101,31 @@ export default function Gallery() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <AnimatedSection key={index} animation="fade-up">
-                <Card
-                  hover
-                  className="cursor-pointer overflow-hidden"
+                {/* Wrap Card in a div with onClick handler */}
+                <div 
+                  className="cursor-pointer"
                   onClick={() => setSelectedImage(project.image)}
                 >
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="p-6">
-                    <div className="flex items-center justify-between mb-2">
-                      <Badge variant="green">{project.category}</Badge>
+                  <Card
+                    hover
+                    className="overflow-hidden h-full"
+                  >
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-2">
+                        <Badge variant="green">{project.category}</Badge>
+                      </div>
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                        {project.title}
+                      </h3>
+                      <p className="text-gray-600">{project.location}</p>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      {project.title}
-                    </h3>
-                    <p className="text-gray-600">{project.location}</p>
-                  </div>
-                </Card>
+                  </Card>
+                </div>
               </AnimatedSection>
             ))}
           </div>
@@ -148,7 +153,7 @@ export default function Gallery() {
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-6">
-                    <div className="text-sm text-green-600 font-semibold mb-2">
+                    <div className="text-sm text-orchid-700 font-semibold mb-2">
                       {event.date}
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -167,7 +172,7 @@ export default function Gallery() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-16">
-              <Award className="w-16 h-16 text-green-600 mx-auto mb-4" />
+              <Award className="w-16 h-16 text-orchid-700 mx-auto mb-4" />
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
                 Certifications & Recognition
               </h2>
@@ -181,8 +186,8 @@ export default function Gallery() {
             {certifications.map((cert, index) => (
               <AnimatedSection key={index} animation="fade-up">
                 <Card hover className="p-6 text-center h-full">
-                  <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Award className="w-10 h-10 text-green-600" />
+                  <div className="w-20 h-20 bg-orchid-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Award className="w-10 h-10 text-orchid-700" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     {cert.name}
@@ -201,7 +206,10 @@ export default function Gallery() {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            onClick={() => setSelectedImage(null)}
+            onClick={(e) => {
+              e.stopPropagation();
+              setSelectedImage(null);
+            }}
             className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
             aria-label="Close modal"
           >

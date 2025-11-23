@@ -7,22 +7,22 @@ import AnimatedSection from '../components/AnimatedSection';
 export default function Home() {
   const highlights = [
     {
-      icon: <Zap className="w-8 h-8 text-green-600" />,
+      icon: <Zap className="w-8 h-8 text-orchid-600" />,
       title: 'AI-Powered Solutions',
       description: 'Intelligent systems that optimize energy consumption and reduce waste',
     },
     {
-      icon: <Leaf className="w-8 h-8 text-green-600" />,
+      icon: <Leaf className="w-8 h-8 text-orchid-600" />,
       title: 'Renewable Energy',
       description: 'Cutting-edge clean energy technologies for a sustainable future',
     },
     {
-      icon: <Droplet className="w-8 h-8 text-green-600" />,
+      icon: <Droplet className="w-8 h-8 text-orchid-600" />,
       title: 'Bioengineering',
       description: 'Nature-inspired innovations that work in harmony with ecosystems',
     },
     {
-      icon: <Shield className="w-8 h-8 text-green-600" />,
+      icon: <Shield className="w-8 h-8 text-orchid-600" />,
       title: 'Environmental Impact',
       description: 'Measurable results in pollution reduction and sustainability',
     },
@@ -51,13 +51,13 @@ export default function Home() {
 
   return (
     <div>
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-50 via-teal-50 to-blue-50">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-orchid-500/5 via-orchid-600/5 to-orchid-700/5">
         <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg')] bg-cover bg-center opacity-10"></div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <AnimatedSection animation="fade-up">
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-              Innovation for a <span className="text-green-600">Greener Tomorrow</span>
+              Innovation for a <span className="text-orchid-700">Greener Tomorrow</span>
             </h1>
           </AnimatedSection>
 
@@ -100,7 +100,7 @@ export default function Home() {
               <AnimatedSection key={index} animation="fade-up">
                 <Card hover className="p-6 h-full">
                   <div className="flex flex-col items-center text-center space-y-4">
-                    <div className="p-3 bg-green-50 rounded-full">
+                    <div className="p-3 bg-orchid-500/10 rounded-full">
                       {highlight.icon}
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900">{highlight.title}</h3>
@@ -137,8 +137,8 @@ export default function Home() {
                     <h3 className="text-2xl font-semibold text-gray-900 mb-2">{project.title}</h3>
                     <p className="text-gray-600 mb-4">{project.description}</p>
                     <div className="flex items-center justify-between">
-                      <span className="text-green-600 font-semibold">{project.impact}</span>
-                      <Link to="/innovations" className="text-green-600 hover:text-green-700 font-medium">
+                      <span className="text-orchid-700 font-semibold">{project.impact}</span>
+                      <Link to="/innovations" className="text-orchid-700 hover:text-orchid-800 font-medium">
                         Learn More →
                       </Link>
                     </div>
@@ -150,7 +150,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-green-600 text-white">
+      <section className="py-20 bg-orchid-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h2 className="text-4xl font-bold mb-6">Our Mission</h2>
@@ -160,7 +160,7 @@ export default function Home() {
               We believe technology and nature can work together to create a sustainable future.
             </p>
             <Link to="/about">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-green-600">
+              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-orchid-700">
                 Learn About Us <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
@@ -173,19 +173,19 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <AnimatedSection animation="fade-up">
               <div className="p-8">
-                <div className="text-5xl font-bold text-green-600 mb-2">500+</div>
+                <div className="text-5xl font-bold text-orchid-700 mb-2">500+</div>
                 <div className="text-xl text-gray-700">Projects Deployed</div>
               </div>
             </AnimatedSection>
             <AnimatedSection animation="fade-up">
               <div className="p-8">
-                <div className="text-5xl font-bold text-green-600 mb-2">45%</div>
+                <div className="text-5xl font-bold text-orchid-700 mb-2">45%</div>
                 <div className="text-xl text-gray-700">Average Energy Savings</div>
               </div>
             </AnimatedSection>
             <AnimatedSection animation="fade-up">
               <div className="p-8">
-                <div className="text-5xl font-bold text-green-600 mb-2">2M+</div>
+                <div className="text-5xl font-bold text-orchid-700 mb-2">2M+</div>
                 <div className="text-xl text-gray-700">Tons CO₂ Reduced</div>
               </div>
             </AnimatedSection>
@@ -193,7 +193,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-teal-50 to-green-50">
+      <section className="py-20 bg-gradient-to-br from-orchid-500/10 to-orchid-600/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Ready to Make a Difference?</h2>

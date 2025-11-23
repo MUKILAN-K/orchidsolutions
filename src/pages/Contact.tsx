@@ -49,17 +49,17 @@ export default function Contact() {
 
   const contactInfo = [
     {
-      icon: <MapPin className="w-6 h-6 text-green-600" />,
+      icon: <MapPin className="w-6 h-6 text-orchid-600" />,
       title: 'Visit Us',
       details: ['Trichy ', 'Tamil Nadu, IN 620013', 'INDIA'],
     },
     {
-      icon: <Phone className="w-6 h-6 text-green-600" />,
+      icon: <Phone className="w-6 h-6 text-orchid-600" />,
       title: 'Call Us',
-      details: ['+91 6380891939', 'Mon-Fri 9am-6pm PST', 'Emergency: +1 (555) 123-4568'],
+      details: ['+91 6380891939', 'Mon-Fri 9am-6pm PST', 'Emergency: +91 6380891939'],
     },
     {
-      icon: <Mail className="w-6 h-6 text-green-600" />,
+      icon: <Mail className="w-6 h-6 text-orchid-600" />,
       title: 'Email Us',
       details: ['info@orchidsolutions.com', 'support@orchidsolutions.com', 'careers@orchidsolutions.com'],
     },
@@ -67,7 +67,7 @@ export default function Contact() {
 
   return (
     <div>
-      <section className="py-20 bg-gradient-to-br from-green-50 to-teal-50">
+      <section className="py-20 bg-gradient-to-br from-orchid-500/5 to-orchid-600/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">Get In Touch</h1>
@@ -86,7 +86,7 @@ export default function Contact() {
               <AnimatedSection key={index} animation="fade-up">
                 <Card className="p-8 text-center h-full">
                   <div className="flex justify-center mb-4">
-                    <div className="p-3 bg-green-50 rounded-full">
+                    <div className="p-3 bg-orchid-500/10 rounded-full">
                       {info.icon}
                     </div>
                   </div>
@@ -125,7 +125,7 @@ export default function Contact() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orchid-500 focus:border-transparent"
                       placeholder="John Doe"
                     />
                   </div>
@@ -141,7 +141,7 @@ export default function Contact() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orchid-500 focus:border-transparent"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -156,7 +156,7 @@ export default function Contact() {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orchid-500 focus:border-transparent"
                       placeholder="Your company name"
                     />
                   </div>
@@ -171,7 +171,7 @@ export default function Contact() {
                       required
                       value={formData.subject}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orchid-500 focus:border-transparent"
                     >
                       <option value="">Select a subject</option>
                       <option value="general">General Inquiry</option>
@@ -193,14 +193,14 @@ export default function Contact() {
                       rows={6}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orchid-500 focus:border-transparent resize-none"
                       placeholder="Tell us about your project or inquiry..."
                     />
                   </div>
 
                   {submitStatus === 'success' && (
-                    <div className="p-4 bg-green-50 border border-green-200 rounded-md">
-                      <p className="text-green-800">
+                    <div className="p-4 bg-orchid-500/10 border border-orchid-500/20 rounded-md">
+                      <p className="text-orchid-700">
                         Thank you for your message! We'll get back to you soon.
                       </p>
                     </div>
@@ -223,9 +223,9 @@ export default function Contact() {
                     {isSubmitting ? (
                       'Sending...'
                     ) : (
-                      <>
+                      <span>
                         Send Message <Send className="w-4 h-4 ml-2" />
-                      </>
+                      </span>
                     )}
                   </Button>
                 </form>
@@ -233,12 +233,12 @@ export default function Contact() {
             </AnimatedSection>
 
             <AnimatedSection animation="slide-left">
-              <Card className="p-8 bg-gradient-to-br from-green-50 to-teal-50 border-0 sticky top-24">
+              <Card className="p-8 bg-gradient-to-br from-orchid-500/5 to-orchid-700/5 border-0 sticky top-24">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Orchid Solutions?</h3>
                 <div className="space-y-6">
                   <div>
                     <div className="flex items-center space-x-2 mb-2">
-                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      <div className="w-2 h-2 bg-orchid-700 rounded-full"></div>
                       <h4 className="font-semibold text-gray-900">Proven Track Record</h4>
                     </div>
                     <p className="text-gray-600 text-sm ml-4">
@@ -248,7 +248,7 @@ export default function Contact() {
 
                   <div>
                     <div className="flex items-center space-x-2 mb-2">
-                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      <div className="w-2 h-2 bg-orchid-700 rounded-full"></div>
                       <h4 className="font-semibold text-gray-900">Expert Team</h4>
                     </div>
                     <p className="text-gray-600 text-sm ml-4">
@@ -258,7 +258,7 @@ export default function Contact() {
 
                   <div>
                     <div className="flex items-center space-x-2 mb-2">
-                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      <div className="w-2 h-2 bg-orchid-700 rounded-full"></div>
                       <h4 className="font-semibold text-gray-900">End-to-End Solutions</h4>
                     </div>
                     <p className="text-gray-600 text-sm ml-4">
@@ -268,7 +268,7 @@ export default function Contact() {
 
                   <div>
                     <div className="flex items-center space-x-2 mb-2">
-                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      <div className="w-2 h-2 bg-orchid-700 rounded-full"></div>
                       <h4 className="font-semibold text-gray-900">Sustainable Impact</h4>
                     </div>
                     <p className="text-gray-600 text-sm ml-4">
@@ -290,4 +290,5 @@ export default function Contact() {
       </section>
     </div>
   );
+
 }

@@ -5,25 +5,25 @@ import Card from '../components/Card';
 export default function Sustainability() {
   const commitments = [
     {
-      icon: <Leaf className="w-8 h-8 text-green-600" />,
+      icon: <Leaf className="w-8 h-8 text-orchid-600" />,
       title: 'Carbon Neutrality',
       description: 'Committed to achieving net-zero carbon emissions across all operations by 2030',
       status: '65% complete',
     },
     {
-      icon: <Recycle className="w-8 h-8 text-green-600" />,
+      icon: <Recycle className="w-8 h-8 text-orchid-600" />,
       title: 'Circular Design',
       description: 'All products designed for recyclability, repairability, and minimal waste',
       status: '80% complete',
     },
     {
-      icon: <TrendingUp className="w-8 h-8 text-green-600" />,
+      icon: <TrendingUp className="w-8 h-8 text-orchid-600" />,
       title: 'Renewable Energy',
       description: '100% renewable energy usage in all facilities and operations',
       status: '90% complete',
     },
     {
-      icon: <Target className="w-8 h-8 text-green-600" />,
+      icon: <Target className="w-8 h-8 text-orchid-600" />,
       title: 'Impact Measurement',
       description: 'Transparent reporting of environmental impact across all projects',
       status: '100% complete',
@@ -66,7 +66,7 @@ export default function Sustainability() {
 
   return (
     <div>
-      <section className="py-20 bg-gradient-to-br from-green-50 to-teal-50">
+      <section className="py-20 bg-gradient-to-br from-orchid-500/5 to-orchid-600/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">Our Commitment to Sustainability</h1>
@@ -94,7 +94,7 @@ export default function Sustainability() {
               <AnimatedSection key={index} animation="fade-up">
                 <Card className="p-8 h-full">
                   <div className="flex items-start space-x-4">
-                    <div className="p-3 bg-green-50 rounded-lg flex-shrink-0">
+                    <div className="p-3 bg-orchid-500/10 rounded-lg flex-shrink-0">
                       {commitment.icon}
                     </div>
                     <div className="flex-1">
@@ -104,13 +104,13 @@ export default function Sustainability() {
                       <p className="text-gray-600 mb-4">{commitment.description}</p>
                       <div className="flex items-center justify-between">
                         <span className="text-sm text-gray-500">Progress</span>
-                        <span className="text-sm font-semibold text-green-600">
+                        <span className="text-sm font-semibold text-orchid-600">
                           {commitment.status}
                         </span>
                       </div>
                       <div className="mt-2 h-2 bg-gray-200 rounded-full overflow-hidden">
                         <div
-                          className="h-full bg-green-600 rounded-full transition-all"
+                          className="h-full bg-orchid-600 rounded-full transition-all"
                           style={{ width: commitment.status }}
                         />
                       </div>
@@ -141,7 +141,7 @@ export default function Sustainability() {
                   <div className="mb-6">
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{goal.metric}</h3>
                     <div className="flex items-baseline space-x-2">
-                      <span className="text-4xl font-bold text-green-600">{goal.current}</span>
+                      <span className="text-4xl font-bold text-orchid-600">{goal.current}</span>
                       <span className="text-gray-500">/ {goal.target}</span>
                       <span className="text-sm text-gray-500">{goal.unit}</span>
                     </div>
@@ -149,11 +149,11 @@ export default function Sustainability() {
                   <div className="space-y-2">
                     <div className="flex items-center justify-between text-sm">
                       <span className="text-gray-600">Progress to 2030 Goal</span>
-                      <span className="font-semibold text-green-600">{goal.progress}%</span>
+                      <span className="font-semibold text-orchid-700">{goal.progress}%</span>
                     </div>
                     <div className="h-4 bg-gray-200 rounded-full overflow-hidden">
                       <div
-                        className="h-full bg-gradient-to-r from-green-500 to-green-600 rounded-full transition-all"
+                        className="h-full bg-gradient-to-r from-orchid-500 to-orchid-700 rounded-full transition-all"
                         style={{ width: `${goal.progress}%` }}
                       />
                     </div>
@@ -182,7 +182,7 @@ export default function Sustainability() {
               <AnimatedSection key={index} animation="fade-up">
                 <Card hover className="p-6 h-full">
                   <div className="flex items-start space-x-3 mb-3">
-                    <div className="text-2xl font-bold text-green-600">{index + 1}</div>
+                    <div className="text-2xl font-bold text-orchid-700">{index + 1}</div>
                     <h3 className="text-lg font-semibold text-gray-900 pt-1">
                       {principle.title}
                     </h3>
@@ -195,7 +195,7 @@ export default function Sustainability() {
         </div>
       </section>
 
-      <section className="py-20 bg-green-600 text-white">
+      <section className="py-20 bg-orchid-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center">
@@ -207,7 +207,7 @@ export default function Sustainability() {
               </p>
               <div className="inline-flex items-center space-x-2 text-lg">
                 <span>Latest Report: 2024 Sustainability Impact</span>
-                <span className="text-green-200">→</span>
+                <span className="text-orchid-200">→</span>
               </div>
             </div>
           </AnimatedSection>
@@ -215,4 +215,5 @@ export default function Sustainability() {
       </section>
     </div>
   );
+
 }

@@ -66,9 +66,9 @@ export default function Layout() {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-sm font-medium transition-colors hover:text-green-600 ${
+                  className={`text-sm font-medium transition-colors hover:text-orchid-700 ${
                     location.pathname === link.path
-                      ? 'text-green-600'
+                      ? 'text-orchid-700'
                       : 'text-gray-700'
                   }`}
                 >
@@ -79,7 +79,7 @@ export default function Layout() {
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 rounded-md text-gray-700 hover:text-green-600 hover:bg-gray-100"
+              className="md:hidden p-2 rounded-md text-gray-700 hover:text-orchid-700 hover:bg-orchid-500/10"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -92,9 +92,9 @@ export default function Layout() {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`block px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-50 hover:text-green-600 ${
+                  className={`block px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-50 hover:text-orchid-700 ${
                     location.pathname === link.path
-                      ? 'text-green-600 bg-green-50'
+                      ? 'text-orchid-700 bg-orchid-500/10'
                       : 'text-gray-700'
                   }`}
                 >
@@ -128,7 +128,7 @@ export default function Layout() {
               <ul className="space-y-2">
                 {navLinks.slice(0, 4).map((link) => (
                   <li key={link.path}>
-                    <Link to={link.path} className="text-sm hover:text-green-400 transition-colors">
+                    <Link to={link.path} className="text-sm hover:text-orchid-700 transition-colors">
                       {link.label}
                     </Link>
                   </li>
@@ -139,10 +139,10 @@ export default function Layout() {
             <div>
               <h3 className="text-white font-semibold mb-4">Solutions</h3>
               <ul className="space-y-2">
-                <li><Link to="/innovations" className="text-sm hover:text-green-400 transition-colors">Innovations</Link></li>
-                <li><Link to="/technology" className="text-sm hover:text-green-400 transition-colors">Technology</Link></li>
-                <li><Link to="/sustainability" className="text-sm hover:text-green-400 transition-colors">Sustainability</Link></li>
-                <li><Link to="/gallery" className="text-sm hover:text-green-400 transition-colors">Gallery</Link></li>
+                <li><Link to="/innovations" className="text-sm hover:text-orchid-700 transition-colors">Innovations</Link></li>
+                <li><Link to="/technology" className="text-sm hover:text-orchid-700 transition-colors">Technology</Link></li>
+                <li><Link to="/sustainability" className="text-sm hover:text-orchid-700 transition-colors">Sustainability</Link></li>
+                <li><Link to="/gallery" className="text-sm hover:text-orchid-700 transition-colors">Gallery</Link></li>
               </ul>
             </div>
 

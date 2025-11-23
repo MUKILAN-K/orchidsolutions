@@ -7,32 +7,32 @@ import { Link } from 'react-router-dom';
 export default function About() {
   const values = [
     {
-      icon: <Target className="w-8 h-8 text-green-600" />,
+      icon: <Target className="w-8 h-8 text-orchid-700" />,
       title: 'Innovation',
       description: 'Pushing boundaries with cutting-edge technology that solves real-world problems',
     },
     {
-      icon: <Heart className="w-8 h-8 text-green-600" />,
+      icon: <Heart className="w-8 h-8 text-orchid-700" />,
       title: 'Sustainability',
       description: 'Every solution designed with environmental impact as our top priority',
     },
     {
-      icon: <Users className="w-8 h-8 text-green-600" />,
+      icon: <Users className="w-8 h-8 text-orchid-700" />,
       title: 'Collaboration',
       description: 'Working together with communities, partners, and stakeholders',
     },
     {
-      icon: <Award className="w-8 h-8 text-green-600" />,
+      icon: <Award className="w-8 h-8 text-orchid-700" />,
       title: 'Excellence',
       description: 'Maintaining the highest standards in design, implementation, and service',
     },
     {
-      icon: <Globe className="w-8 h-8 text-green-600" />,
+      icon: <Globe className="w-8 h-8 text-orchid-700" />,
       title: 'Global Impact',
       description: 'Creating solutions that scale to benefit communities worldwide',
     },
     {
-      icon: <Eye className="w-8 h-8 text-green-600" />,
+      icon: <Eye className="w-8 h-8 text-orchid-700" />,
       title: 'Transparency',
       description: 'Open communication about our methods, impact, and continuous improvement',
     },
@@ -40,7 +40,7 @@ export default function About() {
 
   return (
     <div>
-      <section className="py-20 bg-gradient-to-br from-green-50 to-teal-50">
+      <section className="py-20 bg-gradient-to-br from-orchid-500/5 to-orchid-600/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">About Orchid Solutions</h1>
@@ -98,7 +98,7 @@ export default function About() {
             <AnimatedSection animation="fade-up">
               <Card className="p-8 h-full">
                 <div className="flex items-center space-x-3 mb-4">
-                  <Target className="w-10 h-10 text-green-600" />
+                  <Target className="w-10 h-10 text-orchid-700" />
                   <h2 className="text-3xl font-bold text-gray-900">Our Vision</h2>
                 </div>
                 <p className="text-gray-700 text-lg leading-relaxed">
@@ -112,7 +112,7 @@ export default function About() {
             <AnimatedSection animation="fade-up">
               <Card className="p-8 h-full">
                 <div className="flex items-center space-x-3 mb-4">
-                  <Eye className="w-10 h-10 text-green-600" />
+                  <Eye className="w-10 h-10 text-orchid-700" />
                   <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
                 </div>
                 <p className="text-gray-700 text-lg leading-relaxed">
@@ -138,7 +138,7 @@ export default function About() {
               <AnimatedSection key={index} animation="fade-up">
                 <Card hover className="p-6 h-full">
                   <div className="space-y-4">
-                    <div className="p-3 bg-green-50 rounded-full w-fit">
+                    <div className="p-3 bg-orchid-500/10 rounded-full w-fit">
                       {value.icon}
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900">{value.title}</h3>
@@ -151,7 +151,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20 bg-green-600 text-white">
+      <section className="py-20 bg-orchid-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <Users className="w-16 h-16 mx-auto mb-6" />
@@ -161,7 +161,7 @@ export default function About() {
               If you're excited about green technology and sustainable innovation, we'd love to hear from you.
             </p>
             <Link to="/contact">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-green-600">
+              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-orchid-700">
                 Get In Touch
               </Button>
             </Link>

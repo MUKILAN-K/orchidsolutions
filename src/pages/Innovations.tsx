@@ -12,7 +12,7 @@ export default function Innovations() {
       id: 0,
       title: 'SolarNet AI',
       category: 'Renewable Energy',
-      icon: <Sun className="w-12 h-12 text-green-600" />,
+      icon: <Sun className="w-12 h-12 text-orchid-600" />,
       tagline: 'Machine Learning-Optimized Solar Energy Systems',
       image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
       description: 'SolarNet AI revolutionizes solar energy capture by using advanced machine learning algorithms to predict weather patterns, optimize panel positioning, and maximize energy output throughout the day.',
@@ -39,7 +39,7 @@ export default function Innovations() {
       id: 1,
       title: 'BioFilter Systems',
       category: 'Bioengineering',
-      icon: <Wind className="w-12 h-12 text-green-600" />,
+      icon: <Wind className="w-12 h-12 text-orchid-600" />,
       tagline: 'Natural Air Purification Technology',
       image: 'https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg',
       description: 'Our BioFilter Systems use bioengineered organisms and natural processes to purify air in urban and industrial environments, removing particulates, VOCs, and harmful pollutants without electricity.',
@@ -66,7 +66,7 @@ export default function Innovations() {
       id: 2,
       title: 'SmartGrid Hub',
       category: 'Smart Infrastructure',
-      icon: <Droplet className="w-12 h-12 text-green-600" />,
+      icon: <Droplet className="w-12 h-12 text-orchid-600" />,
       tagline: 'Intelligent Energy Distribution Network',
       image: 'https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg',
       description: 'SmartGrid Hub is an AI-powered energy management system that optimizes distribution, balances load, and integrates renewable sources to create efficient, resilient urban power networks.',
@@ -95,7 +95,7 @@ export default function Innovations() {
 
   return (
     <div>
-      <section className="py-20 bg-gradient-to-br from-green-50 to-teal-50">
+      <section className="py-20 bg-gradient-to-br from-orchid-500/5 to-orchid-600/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection animation="fade-up">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">Our Innovations</h1>
@@ -117,7 +117,7 @@ export default function Innovations() {
                   onClick={() => setActiveTab(index)}
                   className={`w-full text-left p-4 rounded-lg transition-all ${
                     activeTab === index
-                      ? 'bg-green-600 text-white shadow-lg'
+                      ? 'bg-orchid-600 text-white shadow-lg'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
@@ -151,7 +151,7 @@ export default function Innovations() {
                       <Badge variant="green">{activeInnovation.category}</Badge>
                     </div>
 
-                    <p className="text-xl text-green-600 font-semibold mb-4">
+                    <p className="text-xl text-orchid-700 font-semibold mb-4">
                       {activeInnovation.tagline}
                     </p>
 
@@ -162,7 +162,7 @@ export default function Innovations() {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                       {activeInnovation.specs.map((spec, index) => (
                         <div key={index} className="text-center p-4 bg-gray-50 rounded-lg">
-                          <div className="text-2xl font-bold text-green-600 mb-1">
+                          <div className="text-2xl font-bold text-orchid-700 mb-1">
                             {spec.value}
                           </div>
                           <div className="text-sm text-gray-600">{spec.label}</div>
@@ -175,14 +175,14 @@ export default function Innovations() {
                       <ul className="space-y-2">
                         {activeInnovation.features.map((feature, index) => (
                           <li key={index} className="flex items-start space-x-2">
-                            <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                            <CheckCircle className="w-5 h-5 text-orchid-700 mt-0.5 flex-shrink-0" />
                             <span className="text-gray-700">{feature}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
-                    <div className="bg-green-50 rounded-lg p-6">
+                    <div className="bg-orchid-500/10 rounded-lg p-6">
                       <h3 className="text-xl font-semibold text-gray-900 mb-4">Environmental Impact</h3>
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         {Object.entries(activeInnovation.impact).map(([key, value]) => (
@@ -190,7 +190,7 @@ export default function Innovations() {
                             <div className="text-sm text-gray-600 uppercase tracking-wide mb-1">
                               {key === 'co2' ? 'CO₂ Reduction' : key}
                             </div>
-                            <div className="text-lg font-semibold text-green-600">{value}</div>
+                            <div className="text-lg font-semibold text-orchid-700">{value}</div>
                           </div>
                         ))}
                       </div>
@@ -204,4 +204,5 @@ export default function Innovations() {
       </section>
     </div>
   );
+
 }
