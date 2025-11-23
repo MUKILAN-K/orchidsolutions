@@ -55,15 +55,19 @@ export default function About() {
       {/* Founder Information Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection animation="fade-up">
-            <Card className="p-8 shadow-lg border border-orchid-100">
+          <AnimatedSection animation="fade-up" className="animate-fade-in-up">
+            <Card className="p-8 shadow-lg border border-orchid-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex flex-col md:flex-row items-center gap-8">
-                <div className="flex-shrink-0">
-                  <div className="w-32 h-32 rounded-full bg-orchid-500/10 flex items-center justify-center">
-                    <Users className="w-16 h-16 text-orchid-700" />
+                <div className="flex-shrink-0 animate-fade-in">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-orchid-500/20 shadow-lg">
+                    <img 
+                      src="/mukilan.png" 
+                      alt="Mukilan K., Founder & CEO of Orchid Solutions" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
-                <div className="flex-1 text-center md:text-left">
+                <div className="flex-1 text-center md:text-left animate-slide-in-right">
                   <h2 className="text-3xl font-bold text-gray-900 mb-4">About the Founder</h2>
                   <p className="text-gray-700 text-lg leading-relaxed">
                     Mukilan K., Founder & CEO of Orchid Solutions, leads the company's mission to combat urban air pollution with sustainable, solar-powered air purification systems enhanced by blockchain for transparent monitoring. With a background in AI, IoT and renewable innovation, he combines technical expertise and community-centered design to create scalable, climate-positive solutions that empower cities and protect public health.
