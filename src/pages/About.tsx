@@ -76,6 +76,81 @@ export default function About() {
               </div>
             </Card>
           </AnimatedSection>
+          
+          {/* Leadership Team Section */}
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Nandhini - CMO */}
+            <AnimatedSection animation="fade-up" className="animate-fade-in-up">
+              <Card className="p-6 shadow-lg border border-orchid-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-orchid-500/20 shadow-lg mb-4">
+                    <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                      <span className="text-4xl text-gray-400">N</span>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">Nandhini</h3>
+                  <p className="text-orchid-700 font-medium mb-3">Chief Marketing Officer</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Nandhini is the creative communicator of Orchid Solutions, specializing in marketing, presentations, and brand storytelling.
+                  </p>
+                  <p className="text-gray-700 text-sm leading-relaxed mt-2">
+                    She leads the company's outreach, visual communication, and public relations — ensuring Orchid's ideas are presented with clarity and impact.
+                  </p>
+                  <p className="text-gray-700 text-sm leading-relaxed mt-2">
+                    Her confident speaking, design sense, and presentation skills make her the voice and image of the company in events and client interactions.
+                  </p>
+                </div>
+              </Card>
+            </AnimatedSection>
+            
+            {/* Rishi - COO */}
+            <AnimatedSection animation="fade-up" className="animate-fade-in-up">
+              <Card className="p-6 shadow-lg border border-orchid-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-orchid-500/20 shadow-lg mb-4">
+                    <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                      <span className="text-4xl text-gray-400">R</span>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">Rishi</h3>
+                  <p className="text-orchid-700 font-medium mb-3">Chief Operating Officer</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Rishi brings structure and technical depth to Orchid Solutions.
+                  </p>
+                  <p className="text-gray-700 text-sm leading-relaxed mt-2">
+                    He manages day-to-day operations, website development, and content systems while bridging communication between design, technical, and marketing teams.
+                  </p>
+                  <p className="text-gray-700 text-sm leading-relaxed mt-2">
+                    His strength in web architecture and workflow management ensures that every project runs smoothly — from concept to completion.
+                  </p>
+                </div>
+              </Card>
+            </AnimatedSection>
+            
+            {/* Tharun - CDO */}
+            <AnimatedSection animation="fade-up" className="animate-fade-in-up">
+              <Card className="p-6 shadow-lg border border-orchid-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-orchid-500/20 shadow-lg mb-4">
+                    <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                      <span className="text-4xl text-gray-400">T</span>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">Tharun</h3>
+                  <p className="text-orchid-700 font-medium mb-3">Chief Design Officer</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Tharun leads the design and modeling division with creativity and precision.
+                  </p>
+                  <p className="text-gray-700 text-sm leading-relaxed mt-2">
+                    He is responsible for CAD design, 3D product visualization, and hardware prototyping, ensuring that every Orchid innovation is both functional and aesthetic.
+                  </p>
+                  <p className="text-gray-700 text-sm leading-relaxed mt-2">
+                    His design thinking transforms abstract ideas into tangible, futuristic prototypes that represent Orchid's commitment to innovation and quality.
+                  </p>
+                </div>
+              </Card>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 
